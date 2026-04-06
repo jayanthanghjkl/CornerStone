@@ -39,6 +39,7 @@ export default function LoginPage() {
     }
   };
 
+<<<<<<< HEAD
   const handleOAuthLogin = async (provider: 'google' | 'github') => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider,
@@ -52,6 +53,11 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-[80vh] items-center justify-center px-4 py-12 mb-22">
       <Card className="w-full mt-10 max-w-md border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
+=======
+  return (
+    <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
+      <Card className="w-full max-w-md border-border/50 shadow-2xl shadow-primary/5">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <CardHeader className="space-y-1 text-center">
           <div className="flex justify-center mb-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
@@ -114,11 +120,19 @@ export default function LoginPage() {
           </div>
 
           <div className="grid grid-cols-2 gap-4">
+<<<<<<< HEAD
             <Button variant="outline" className="h-11" onClick={() => handleOAuthLogin('github')}>
               <Github className="mr-2 h-4 w-4" />
               GitHub
             </Button>
             <Button variant="outline" className="h-11" onClick={() => handleOAuthLogin('google')}>
+=======
+            <Button variant="outline" className="h-11">
+              <Github className="mr-2 h-4 w-4" />
+              GitHub
+            </Button>
+            <Button variant="outline" className="h-11">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
               <Chrome className="mr-2 h-4 w-4" />
               Google
             </Button>

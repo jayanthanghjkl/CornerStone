@@ -48,7 +48,11 @@ export default function AboutPage() {
 
   return (
     <main className="flex flex-col overflow-x-hidden">
+<<<<<<< HEAD
       {}
+=======
+      {/* ── HERO SECTION ───────────────────────────────────── */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       <section className="relative bg-background overflow-hidden py-10 md:py-20 mt-20">
         <div className="absolute inset-0 pointer-events-none -z-10">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-full bg-primary/5 blur-[120px]" />
@@ -85,7 +89,11 @@ export default function AboutPage() {
       </section>
 
 
+<<<<<<< HEAD
       {}
+=======
+      {/* ── VALUES SECTION ────────────────────────────────── */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       <section className={`relative ${sectionPadding}`}>
         <div className={containerClass}>
           <div className="text-center mb-20 space-y-4">
@@ -97,7 +105,11 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value) => (
+<<<<<<< HEAD
               <Card key={value.title} className="group border-border/50 hover:border-primary/20 transition-all bg-card/50 backdrop-blur-sm p-2 rounded-[2rem]hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
+=======
+              <Card key={value.title} className="group border-border/50 hover:border-primary/20 transition-all bg-card/50 backdrop-blur-sm p-2 rounded-[2rem]">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                 <CardHeader className="p-6">
                   <div className={`h-14 w-14 rounded-2xl ${value.bg} flex items-center justify-center ${value.color} mb-6 transition-transform group-hover:rotate-12`}>
                     <value.icon className="h-7 w-7" />
@@ -115,10 +127,17 @@ export default function AboutPage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {}
       <section className={`relative ${sectionPadding} overflow-hidden`}>
         <div className={containerClass}>
           <div className="relative overflow-hidden rounded-[3rem] bg-primary px-8 py-20 text-center text-primary-foreground shadow-2xl hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20 hover:shadow-2xl hover:shadow-black/40">
+=======
+      {/* ── VISION SECTION ────────────────────────────────── */}
+      <section className={`relative ${sectionPadding} overflow-hidden`}>
+        <div className={containerClass}>
+          <div className="relative overflow-hidden rounded-[3rem] bg-primary px-8 py-20 text-center text-primary-foreground shadow-2xl">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none -z-10" />
             
             <div className="relative z-10 max-w-3xl mx-auto space-y-8">
@@ -130,7 +149,11 @@ export default function AboutPage() {
                 display technologies to ensure your potential remains limitless.
               </p>
               <div className="pt-6">
+<<<<<<< HEAD
                 <Button size="lg" variant="secondary" asChild className="rounded-full px-10 h-14 text-lg hover:bg-white hover:scale-105 hover:text-primary font-bold shadow-xl">
+=======
+                <Button size="lg" variant="secondary" asChild className="rounded-full px-10 h-14 text-lg hover:bg-primary hover:text- font-bold shadow-xl">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                   <Link href="/shop" className="gap-2">
                     Explore Our Products
                     <ArrowRight className="h-5 w-5" />

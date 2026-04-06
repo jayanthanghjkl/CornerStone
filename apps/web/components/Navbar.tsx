@@ -26,7 +26,11 @@ export function Navbar() {
   const [mounted, setMounted] = useState(false);
   const { totalItems } = useCart();
   
+<<<<<<< HEAD
   
+=======
+  // Handle cart realtime updates globally here
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
   useCartRealtime(user?.id);
 
   useEffect(() => {
@@ -71,7 +75,11 @@ export function Navbar() {
 
   const handleSignOut = async () => {
     await supabase.auth.signOut();
+<<<<<<< HEAD
     queryClient.clear(); 
+=======
+    queryClient.clear(); // Clear ALL queries (cart, user, etc.)
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     setUser(null);
     setIsAdmin(false);
     router.push("/");
@@ -79,11 +87,17 @@ export function Navbar() {
   };
 
   return (
+<<<<<<< HEAD
     <header className={cn("sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60", pathname === "/shop" ? "bg-white" : "bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60")}
       
     >
       <div className="mx-auto flex h-16 max-w-[1350px] mt-4 mx-auto space-y-4 items-center justify-between px-4 sm:px-6 lg:px-8">
         {}
+=======
+    <header className="sticky top-0 z-50 w-full  bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60">
+      <div className="mx-auto flex h-16 max-w-[1350px] mt-4 mx-auto space-y-4 items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <Link href="/" className="flex items-center gap-2 group">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground ring-2 ring-primary/20 transition-all group-hover:ring-primary/60">
             <Laptop className="h-4 w-4" />
@@ -93,14 +107,22 @@ export function Navbar() {
           </span>
         </Link>
 
+<<<<<<< HEAD
         {}
+=======
+        {/* Desktop nav */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
+<<<<<<< HEAD
                 "text-sm font-medium transition-colors hover:text-foreground hover:scale-105",
+=======
+                "text-sm font-medium transition-colors hover:text-foreground",
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                 pathname === link.href ? "text-primary font-semibold" : "text-muted-foreground"
               )}
             >
@@ -118,9 +140,15 @@ export function Navbar() {
           )}
         </nav>
 
+<<<<<<< HEAD
         {}
         <div className="flex items-center gap-2">
           {}
+=======
+        {/* Right actions */}
+        <div className="flex items-center gap-2">
+          {/* Cart */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           {pathname !== "/" && pathname !== "/about" && pathname !== "/collections" && (
             <Button variant="ghost" size="icon" asChild className="relative">
               <Link href="/cart" aria-label={`Cart, ${mounted ? totalItems : 0} items`}>
@@ -151,7 +179,11 @@ export function Navbar() {
             </>
           )}
 
+<<<<<<< HEAD
           {}
+=======
+          {/* Mobile hamburger */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <Button
             variant="ghost"
             size="icon"
@@ -164,7 +196,11 @@ export function Navbar() {
         </div>
       </div>
 
+<<<<<<< HEAD
       {}
+=======
+      {/* Mobile menu */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       <div
         className={cn(
           "overflow-hidden border-t border-border/50 bg-background/95 backdrop-blur-xl md:hidden transition-all duration-300",
@@ -200,10 +236,17 @@ export function Navbar() {
               </Button>
             ) : (
               <>
+<<<<<<< HEAD
                 <Button variant="outline" size="sm" className="w-full hover:scale-105 hover:bg-primary hover:text-primary-foreground" asChild onClick={() => setMobileOpen(false)}>
                   <Link href="/auth/login">Sign in</Link>
                 </Button>
                 <Button size="sm" className="w-full hover:scale-105 hover:bg-primary hover:text-primary-foreground" asChild onClick={() => setMobileOpen(false)}>
+=======
+                <Button variant="outline" size="sm" className="w-full" asChild onClick={() => setMobileOpen(false)}>
+                  <Link href="/auth/login">Sign in</Link>
+                </Button>
+                <Button size="sm" className="w-full" asChild onClick={() => setMobileOpen(false)}>
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                   <Link href="/auth/register">Get started</Link>
                 </Button>
               </>

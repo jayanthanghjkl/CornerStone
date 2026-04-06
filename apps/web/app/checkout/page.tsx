@@ -46,7 +46,11 @@ export default function CheckoutPage() {
       
       setOrderId(data);
       setIsOrdered(true);
+<<<<<<< HEAD
       
+=======
+      // No need to call clearCart mutation as the RPC handles it on the server
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     } catch (err: any) {
       console.error("Checkout failed:", err);
       alert(err.message || "An error occurred during checkout. Please try again.");
@@ -112,7 +116,11 @@ export default function CheckoutPage() {
       <h1 className="text-3xl font-extrabold tracking-tight mb-10">Checkout</h1>
 
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
+<<<<<<< HEAD
         {}
+=======
+        {/* Shipping & Payment Form */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <div className="lg:col-span-7">
           <form onSubmit={handlePlaceOrder} className="space-y-8">
             <section className="space-y-4">
@@ -182,7 +190,11 @@ export default function CheckoutPage() {
           </form>
         </div>
 
+<<<<<<< HEAD
         {}
+=======
+        {/* Order Summary Sidebar */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <div className="lg:col-span-5">
           <div className="rounded-3xl border border-border/50 bg-card p-8 sticky top-24">
             <h2 className="text-xl font-bold mb-6">Your Order</h2>

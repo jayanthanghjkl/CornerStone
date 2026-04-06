@@ -43,12 +43,20 @@ export async function middleware(request: NextRequest) {
     const isAdminPage = request.nextUrl.pathname.startsWith("/admin");
     const isCheckoutPage = request.nextUrl.pathname.startsWith("/checkout");
 
+<<<<<<< HEAD
     
+=======
+    // Redirect unauthenticated users to login
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     if (!user && (isAdminPage || isCheckoutPage)) {
       return NextResponse.redirect(new URL("/auth/login", request.url));
     }
 
+<<<<<<< HEAD
     
+=======
+    // Redirect authenticated users away from auth pages
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     if (user && isAuthPage) {
       return NextResponse.redirect(new URL("/", request.url));
     }
@@ -62,7 +70,17 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
+<<<<<<< HEAD
     
+=======
+    /*
+     * Match all request paths except for the ones starting with:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * Feel free to modify this pattern to include more paths.
+     */
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };

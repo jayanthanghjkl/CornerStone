@@ -15,7 +15,11 @@ async function fetchProducts(): Promise<Product[]> {
 
     if (!data) return [];
 
+<<<<<<< HEAD
     
+=======
+    // Map database fields to schema
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     return z.array(productSchema).parse(
       data.map((p) => ({
         id: p.id,

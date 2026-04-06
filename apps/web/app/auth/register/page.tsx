@@ -8,7 +8,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+<<<<<<< HEAD
 import { Laptop, AlertCircle, CheckCircle2, Github, Chrome } from "lucide-react";
+=======
+import { Laptop, AlertCircle, CheckCircle2 } from "lucide-react";
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -46,6 +50,7 @@ export default function RegisterPage() {
     }
   };
 
+<<<<<<< HEAD
   const handleOAuthLogin = async (provider: 'google' | 'github') => {
     const { error } = await supabase.auth.signInWithOAuth({
       provider,
@@ -63,6 +68,12 @@ export default function RegisterPage() {
       <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
         
         <Card className="w-full mt-10 max-w-md border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
+=======
+  if (success) {
+    return (
+      <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
+        <Card className="w-full max-w-md border-border/50 shadow-2xl">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <CardHeader className="text-center">
             <div className="flex justify-center mb-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-500/10 text-green-500">
@@ -83,15 +94,22 @@ export default function RegisterPage() {
             </Button>
           </CardFooter>
         </Card>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       </div>
     );
   }
 
   return (
+<<<<<<< HEAD
     
     <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
       
+=======
+    <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       <Card className="w-full max-w-md border-border/50 shadow-2xl shadow-primary/5">
         <CardHeader className="space-y-1 text-center">
           <div className="flex justify-center mb-4">
@@ -151,6 +169,7 @@ export default function RegisterPage() {
               {loading ? "Creating Account..." : "Sign Up"}
             </Button>
           </form>
+<<<<<<< HEAD
 
           <div className="relative my-6">
             <div className="absolute inset-0 flex items-center">
@@ -171,6 +190,8 @@ export default function RegisterPage() {
               Google
             </Button>
           </div>
+=======
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         </CardContent>
         <CardFooter className="justify-center border-t border-border/10 pt-6">
           <p className="text-sm text-muted-foreground">
@@ -184,8 +205,12 @@ export default function RegisterPage() {
           </p>
         </CardFooter>
       </Card>
+<<<<<<< HEAD
       
     </div>
     
+=======
+    </div>
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
   );
 }

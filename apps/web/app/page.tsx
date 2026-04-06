@@ -28,7 +28,11 @@ export const metadata: Metadata = {
     "Power your potential with Cornerstone. High-performance products for creators, developers, and professionals.",
 };
 
+<<<<<<< HEAD
 
+=======
+/* ── Mock featured products ─────────────────────────────── */
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
 const featuredProducts: Product[] = [
   {
     id: "1",
@@ -84,7 +88,11 @@ const featuredProducts: Product[] = [
   },
 ];
 
+<<<<<<< HEAD
 
+=======
+/* ── Feature cards ──────────────────────────────────────── */
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
 const features = [
   {
     icon: Cpu,
@@ -120,7 +128,11 @@ const features = [
   },
 ];
 
+<<<<<<< HEAD
 
+=======
+/* ── Stats ──────────────────────────────────────────────── */
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
 const stats = [
   { value: "10K+", label: "Products Shipped" },
   { value: "24h", label: "Express Delivery" },
@@ -134,9 +146,15 @@ export default function HomePage() {
 
   return (
     <main className="flex flex-col overflow-x-hidden">
+<<<<<<< HEAD
       {}
       <section className="relative min-h-screen flex  bg-background overflow-hidden pt-10  md:pt-35">
         {}
+=======
+      {/* ── HERO SECTION ───────────────────────────────────── */}
+      <section className="relative min-h-screen flex  bg-background overflow-hidden pt-10  md:pt-35">
+        {/* Background Animation/Decorative Elements */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <div className="absolute inset-0 pointer-events-none -z-10">
           <div
             aria-hidden
@@ -148,7 +166,11 @@ export default function HomePage() {
           />
         </div>
 
+<<<<<<< HEAD
         {}
+=======
+        {/* Hero Content */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <div className={containerClass}>
           <div className="relative z-10 text-center justify-center space-y-4 pt-10">
 
@@ -165,13 +187,21 @@ export default function HomePage() {
             </p>
 
             <div className="mt-5 flex flex-wrap items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-10 duration-1000 py-10 md:py-5">
+<<<<<<< HEAD
               <Button size="lg" asChild className="gap-2 px-10 h-14 rounded-full hover:border-primary text-lg shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 hover:bg-white hover:text-primary hover:border-2 hover:border-primary transition-all">
+=======
+              <Button size="lg" asChild className="gap-2 px-10 h-14 rounded-full text-lg shadow-2xl shadow-primary/20 hover:shadow-primary/40 transition-all">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                 <Link href="/shop">
                   Browse Shop
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
+<<<<<<< HEAD
               <Button size="lg" variant="outline" asChild className="px-10 h-14 rounded-full text-lg border-border/50 hover:border-primary shadow-primary/20 hover:shadow-primary/40 hover: shadow-xl hover:scale-105 hover:bg-white hover:text-primary hover:border-2 hover:border-primary hover:bg-muted/50">
+=======
+              <Button size="lg" variant="outline" asChild className="px-10 h-14 rounded-full text-lg border-border/50 hover:bg-muted/50">
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                 <Link href="/collections">View Collections</Link>
               </Button>
             </div>
@@ -192,7 +222,11 @@ export default function HomePage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {}
+=======
+      {/* ── FEATURED HARDWARE ─────────────────────────────── */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
 
       <section className={`relative z-10 bg-muted/30 ${sectionPadding}`}>
         <div className={containerClass}>
@@ -222,7 +256,11 @@ export default function HomePage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {}
+=======
+      {/* ── ENGINEERING EXCELLENCE ────────────────────────── */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       <section className={`relative bg-muted/20 ${sectionPadding}`}>
         <div className={containerClass}>
           <div className="max-w-3xl mb-20">
@@ -243,7 +281,11 @@ export default function HomePage() {
             {features.map(({ icon: Icon, title, description, color, bg }) => (
               <Card
                 key={title}
+<<<<<<< HEAD
                 className="group border-border/50 transition-all hover:border-primary/30 bg-card/50 backdrop-blur-sm p-2 rounded-3xl hover:scale-105"
+=======
+                className="group border-border/50 transition-all hover:border-primary/30 bg-card/50 backdrop-blur-sm p-2 rounded-3xl"
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
               >
                 <CardHeader className="p-6">
                   <div
@@ -264,11 +306,19 @@ export default function HomePage() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {}
       <section className={`relative ${sectionPadding} overflow-hidden`}>
         <div className={containerClass}>
           <div className="relative overflow-hidden rounded-[3rem] bg-foreground px-6 py-24 text-center shadow-[0_48px_100px_-20px_rgba(0,0,0,0.4)] sm:px-16 md:py-32">
             {}
+=======
+      {/* ── FINAL CTA SECTION ─────────────────────────────── */}
+      <section className={`relative ${sectionPadding} overflow-hidden`}>
+        <div className={containerClass}>
+          <div className="relative overflow-hidden rounded-[3rem] bg-foreground px-6 py-24 text-center shadow-[0_48px_100px_-20px_rgba(0,0,0,0.4)] sm:px-16 md:py-32">
+            {/* Background pattern for CTA */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
             <div
               aria-hidden
               className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-purple-500/10 to-indigo-500/20 opacity-50"
@@ -305,7 +355,11 @@ export default function HomePage() {
                   size="lg"
                   variant="outline"
                   asChild
+<<<<<<< HEAD
                   className="text-black hover:bg-background/10 hover:text-background px-12 h-16 rounded-full text-xl hover:scale-105 font-black backdrop-blur-sm"
+=======
+                  className="text-black hover:bg-background/10 hover:text-background px-12 h-16 rounded-full text-xl font-black backdrop-blur-sm"
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                 >
                   <Link href="/shop">Explore Shop</Link>
                 </Button>

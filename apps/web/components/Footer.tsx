@@ -31,9 +31,15 @@ export function Footer() {
   return (
     <footer className="border-t border-border/50 bg-background">
       <div className="mx-auto max-h-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+<<<<<<< HEAD
         {}
         <div className="grid grid-cols-2 gap-8 py-12 md:grid-cols-5 lg:gap-12">
           {}
+=======
+        {/* Main grid */}
+        <div className="grid grid-cols-2 gap-8 py-12 md:grid-cols-5 lg:gap-12">
+          {/* Brand column */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-2 group w-fit">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
@@ -47,7 +53,11 @@ export function Footer() {
               Cornerstone provides premium, high-performance products for creators, 
               developers, and professionals. Experience the next generation of computing.
             </p>
+<<<<<<< HEAD
             {}
+=======
+            {/* Socials */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
             <div className="mt-6 flex gap-3">
               {socials.map(({ icon: Icon, href, label }) => (
                 <a
@@ -64,7 +74,11 @@ export function Footer() {
             </div>
           </div>
 
+<<<<<<< HEAD
           {}
+=======
+          {/* Link columns */}
+>>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           {Object.entries(footerLinks).map(([group, links]) => (
             <div key={group}>
               <h3 className="mb-3 text-sm font-semibold text-foreground">
