@@ -1,0 +1,25 @@
+{
+  "name": "@harmonicwave/ui",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "scripts": {
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@harmonicwave/typescript-config": "workspace:*",
+    "@harmonicwave/eslint-config": "workspace:*",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.8.2"
+  }
+}
