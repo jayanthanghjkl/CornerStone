@@ -40,7 +40,7 @@ export default function AnalyticsPage() {
         
         const productMap = new Map();
         orderItems?.forEach(item => {
-          const current = productMap.get(item.product_id) || { name: item.products?.name, total: 0, qty: 0 };
+          const current = productMap.get(item.product_id) || { name: (item.products as any)?.[0]?.name || (item.products as any)?.name, total: 0, qty: 0 };
           productMap.set(item.product_id, {
             ...current,
             total: current.total + (item.price * item.quantity),
