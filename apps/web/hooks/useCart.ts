@@ -21,11 +21,7 @@ async function fetchCartItems(userId: string): Promise<DbCartItem[]> {
     .single();
 
   if (error) {
-<<<<<<< HEAD
     if (error.code === 'PGRST116') return []; 
-=======
-    if (error.code === 'PGRST116') return []; // No cart yet
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     throw error;
   }
   
@@ -68,7 +64,6 @@ export function useCart() {
     const handleAuthChange = async (session: any) => {
       const newUser = session?.user ?? null;
       
-<<<<<<< HEAD
       
       
       
@@ -76,15 +71,6 @@ export function useCart() {
         
         
         
-=======
-      // Use a local ref-like check or functional state to avoid dependency loop
-      // We only want to sync if we have a NEW user and we had guest items
-      // and we haven't just synced.
-      if (newUser && !isSyncing) {
-        // We can't easily check "old user" here without a ref, 
-        // but we can check if we have items to sync.
-        // To be safe, we'll use a local flag for this mount.
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         const items = useCartStore.getState().items;
         if (items.length > 0) {
           isSyncing = true;
@@ -127,11 +113,7 @@ export function useCart() {
       mounted = false;
       subscription.unsubscribe();
     };
-<<<<<<< HEAD
   }, []); 
-=======
-  }, []); // Only run once on mount. guestCart.items.length is handled by getState() inside.
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
 
   const cartQuery = useQuery({
     queryKey: ["cart", user?.id],
@@ -151,19 +133,11 @@ export function useCart() {
   const addItem = useMutation<void, Error, { productId: string; quantity?: number; product?: any }>({
     mutationFn: async ({ productId, quantity = 1, product }) => {
       if (!user) {
-<<<<<<< HEAD
         
         if (product) {
           guestCart.addItem(product, quantity);
         } else {
           
-=======
-        // Fallback to guest cart if not logged in
-        if (product) {
-          guestCart.addItem(product, quantity);
-        } else {
-          // If product info not provided, we might need to fetch it or just redirect
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           const returnTo = window.location.pathname + window.location.search;
           router.push(`/auth/login?returnTo=${encodeURIComponent(returnTo)}`);
         }
@@ -271,19 +245,11 @@ export function useCart() {
 
   const dbItems = cartQuery.data ?? [];
   const items = user ? dbItems : guestCart.items.map(item => ({
-<<<<<<< HEAD
     id: item.product.id, 
     product_id: item.product.id,
     cart_id: "guest",
     quantity: item.quantity,
     added_at: new Date().toISOString(),
-=======
-    id: item.product.id, // using product id as item id for guest items
-    product_id: item.product.id,
-    user_id: null,
-    quantity: item.quantity,
-    created_at: new Date().toISOString(),
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     product: item.product
   }));
 
@@ -321,11 +287,7 @@ export function useCartRealtime(userId: string | undefined) {
   useEffect(() => {
     if (!userId) return;
     
-<<<<<<< HEAD
     
-=======
-    // Unique channel for this hook instance
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     const channel = supabase
       .channel(`cart-realtime-${userId}`)
       .on("postgres_changes", { event: "*", schema: "public", table: "cart_items" }, 

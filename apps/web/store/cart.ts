@@ -8,11 +8,7 @@ interface CartStore {
   removeItem: (productId: string) => void;
   updateQuantity: (productId: string, quantity: number) => void;
   clearCart: () => void;
-<<<<<<< HEAD
   
-=======
-  // Computed helpers
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
   totalItems: () => number;
   totalPrice: () => number;
 }

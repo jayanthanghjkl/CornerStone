@@ -37,11 +37,7 @@ export default function AdminProductsPage() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [editingProduct, setEditingProduct] = useState<any>(null);
 
-<<<<<<< HEAD
   
-=======
-  // Form State
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
   const [formData, setFormData] = useState({
     name: "",
     description: "",
@@ -122,11 +118,7 @@ export default function AdminProductsPage() {
           <h1 className="text-3xl font-bold tracking-tight">Products</h1>
           <p className="text-muted-foreground">Manage your laptop inventory and pricing.</p>
         </div>
-<<<<<<< HEAD
         <Button onClick={() => handleOpenDialog()} className="gap-2 rounded-full px-6 hover:bg-white hover:text-primary hover:scale-105 transition-all">
-=======
-        <Button onClick={() => handleOpenDialog()} className="gap-2 rounded-full px-6">
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <Plus className="h-4 w-4" />
           Add Product
         </Button>
@@ -210,11 +202,7 @@ export default function AdminProductsPage() {
         </table>
       </div>
 
-<<<<<<< HEAD
       {}
-=======
-      {/* Add/Edit Dialog */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="sm:max-w-[500px]">
           <DialogHeader>

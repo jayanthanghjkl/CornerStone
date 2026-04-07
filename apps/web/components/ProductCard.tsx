@@ -28,15 +28,9 @@ export function ProductCard({ product, className }: ProductCardProps) {
   return (
     <div className={cn("group block relative", className)}>
       <Card className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm h-full flex flex-col">
-<<<<<<< HEAD
         {}
         <Link href={`/shop/${product.id}`} className="flex-1 flex flex-col">
           {}
-=======
-        {/* Wrap content in Link, but excluding the footer button */}
-        <Link href={`/shop/${product.id}`} className="flex-1 flex flex-col">
-          {/* Image Container */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <div className="relative h-56 w-full overflow-hidden bg-muted/50">
             {product.imageUrl ? (
               <Image
@@ -103,11 +97,7 @@ export function ProductCard({ product, className }: ProductCardProps) {
           </CardContent>
         </Link>
 
-<<<<<<< HEAD
         {}
-=======
-        {/* Footer with ADD Button - OUTSIDE the Link to avoid nesting issues */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <CardFooter className="p-4 pt-0 flex items-center justify-between border-t border-border/10 mt-2 bg-muted/20">
           <div className="flex flex-col">
             <span className="text-xs text-muted-foreground line-through opacity-50">

@@ -39,11 +39,7 @@ export default function CartPage() {
         <p className="mt-4 text-muted-foreground max-w-xs">
           Looks like you haven't added any premium laptops to your cart yet.
         </p>
-<<<<<<< HEAD
         <Button asChild className="mt-8 rounded-full px-8 hover:bg-white hover:border-2 hover:border-primary hover:text-primary hover:scale-105" size="lg">
-=======
-        <Button asChild className="mt-8 rounded-full px-8" size="lg">
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <Link href="/shop">Start Shopping</Link>
         </Button>
       </div>
@@ -57,11 +53,7 @@ export default function CartPage() {
       </h1>
 
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
-<<<<<<< HEAD
         {}
-=======
-        {/* Cart Items */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <div className="lg:col-span-8">
           <div className="space-y-6">
             {items.map((item) => {
@@ -73,11 +65,7 @@ export default function CartPage() {
                   key={item.id} 
                   className="flex flex-col sm:flex-row items-center gap-6 rounded-3xl border border-border/50 bg-card/50 p-6 backdrop-blur-sm transition-all hover:border-primary/20"
                 >
-<<<<<<< HEAD
                   {}
-=======
-                  {/* Product Image */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                   <div className="relative h-32 w-full sm:w-32 flex-shrink-0 overflow-hidden rounded-2xl bg-muted/50 border border-border/10">
                     {product.imageUrl ? (
                       <Image
@@ -93,11 +81,7 @@ export default function CartPage() {
                     )}
                   </div>
 
-<<<<<<< HEAD
                   {}
-=======
-                  {/* Product Details */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                   <div className="flex flex-1 flex-col">
                     <div className="flex items-start justify-between">
                       <div>
@@ -119,11 +103,7 @@ export default function CartPage() {
                     </div>
 
                     <div className="mt-4 flex flex-wrap items-center justify-between gap-4">
-<<<<<<< HEAD
                       {}
-=======
-                      {/* Quantity Controls */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
                       <div className="flex items-center rounded-full border border-border/50 bg-muted/30 px-2 py-1">
                         <Button
                           variant="ghost"
@@ -162,11 +142,7 @@ export default function CartPage() {
           </div>
         </div>
 
-<<<<<<< HEAD
         {}
-=======
-        {/* Order Summary */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <div className="lg:col-span-4">
           <div className="sticky top-24 rounded-3xl border border-border/50 bg-card p-8 shadow-xl shadow-primary/5">
             <h2 className="text-xl font-bold mb-6">Order Summary</h2>

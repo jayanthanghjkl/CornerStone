@@ -18,11 +18,7 @@ export const env = createEnv({
   },
 });
 
-<<<<<<< HEAD
 
-=======
-// Helper to get the anon key from either name
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
 export const getSupabaseAnonKey = () => {
   return env.NEXT_PUBLIC_SUPABASE_ANON_KEY || env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || "";
 };

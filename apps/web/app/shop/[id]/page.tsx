@@ -55,11 +55,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
       </Link>
 
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-start">
-<<<<<<< HEAD
         {}
-=======
-        {/* Product Image */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <div className="relative aspect-square overflow-hidden rounded-3xl bg-muted/50 border border-border/50">
           {product.imageUrl ? (
             <Image
@@ -76,11 +72,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
           )}
         </div>
 
-<<<<<<< HEAD
         {}
-=======
-        {/* Product Info */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
         <div className="flex flex-col">
           <div className="mb-6 flex items-center gap-2">
             <Badge variant="secondary" className="px-3 py-1 font-semibold">
@@ -127,11 +119,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             </p>
           </div>
 
-<<<<<<< HEAD
           {}
-=======
-          {/* Quick Specs */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <div className="mt-8 grid grid-cols-2 gap-4">
             <div className="rounded-2xl border border-border/50 bg-muted/20 p-4">
               <div className="flex items-center gap-2 text-primary">
@@ -163,11 +151,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             </div>
           </div>
 
-<<<<<<< HEAD
           {}
-=======
-          {/* Action Buttons */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button 
               size="lg" 
@@ -187,11 +171,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             </Button>
           </div>
 
-<<<<<<< HEAD
           {}
-=======
-          {/* Guarantees */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <div className="mt-12 grid grid-cols-1 gap-6 border-t border-border/50 pt-8 sm:grid-cols-3">
             <div className="flex flex-col items-center text-center">
               <Truck className="h-6 w-6 text-primary mb-2" />

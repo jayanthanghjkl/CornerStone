@@ -25,57 +25,25 @@ export default function ShopPage() {
   return (
     
   <div className="mx-auto px-4 py-12 sm:px-6 lg:px-8">
-<<<<<<< HEAD
       {}
     
       <div className="sticky top-0 z-50 bg-background">
         {}
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto">
           <div className="mt-5 mb-5 flex flex-wrap items-center gap-2">
-=======
-      {/* Header */}
-    <div className="sticky top-0 z-40 border-b border-border/50 bg-background">
-      
-        <div className="mb-12 max-w-7xl mx-auto space-y-4 pt-4"> {/* Added pt-4 to prevent clipping at the very top */}
-          <div className="flex items-center gap-2">
-            <Badge variant="outline" className="mt-16 px-3 py-1 uppercase tracking-wider text-[10px] font-bold">
-              Catalog
-            </Badge>
-          </div>
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
-            Premium <span className="text-primary">Laptops</span>
-          </h1>
-          <p className="max-w-2xl text-lg text-muted-foreground">
-            Explore our hand-picked selection of high-performance machines 
-            engineered for the modern professional.
-          </p>
-        </div>
-
-        {/* Filters & Search */}
-        <div className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto">
-          <div className="flex flex-wrap items-center gap-2">
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
             {categories.map((cat) => (
               <Button
                 key={cat}
                 variant={activeCategory === cat ? "default" : "outline"}
                 size="sm"
                 onClick={() => setActiveCategory(cat)}
-<<<<<<< HEAD
                 className="rounded-full px-5 hover:text-white"
-=======
-                className="rounded-full px-5"
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
               >
                 {cat}
               </Button>
             ))}
           </div>
-<<<<<<< HEAD
         <div className="mt-5 mb-5">
-=======
-
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
           <div className="relative w-full max-w-sm">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
@@ -86,22 +54,15 @@ export default function ShopPage() {
             />
           </div>
         </div>
-<<<<<<< HEAD
         </div>
       
-=======
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       
     </div>
 
 
 
 
-<<<<<<< HEAD
       {}
-=======
-      {/* Product Grid */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
     <div className="pt-10 content-section max-w-7xl mx-auto">
       {isLoading ? (
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">

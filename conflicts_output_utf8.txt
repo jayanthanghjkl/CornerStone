@@ -1,0 +1,984 @@
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\about\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\about\page.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── HERO SECTION ───────────────────────────────────── */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\about\page.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── VALUES SECTION ────────────────────────────────── */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\about\page.tsx:
+--HEAD CONTENT--
+              <Card key={value.title} className="group border-border/50 hover:border-primary/20 transition-all bg-card/50 backdrop-blur-sm p-2 rounded-[2rem]hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
+--END HEAD--
+--REMOTE CONTENT--
+              <Card key={value.title} className="group border-border/50 hover:border-primary/20 transition-all bg-card/50 backdrop-blur-sm p-2 rounded-[2rem]">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\about\page.tsx:
+--HEAD CONTENT--
+      {}
+      <section className={`relative ${sectionPadding} overflow-hidden`}>
+        <div className={containerClass}>
+          <div className="relative overflow-hidden rounded-[3rem] bg-primary px-8 py-20 text-center text-primary-foreground shadow-2xl hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20 hover:shadow-2xl hover:shadow-black/40">
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── VISION SECTION ────────────────────────────────── */}
+      <section className={`relative ${sectionPadding} overflow-hidden`}>
+        <div className={containerClass}>
+          <div className="relative overflow-hidden rounded-[3rem] bg-primary px-8 py-20 text-center text-primary-foreground shadow-2xl">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\about\page.tsx:
+--HEAD CONTENT--
+                <Button size="lg" variant="secondary" asChild className="rounded-full px-10 h-14 text-lg hover:bg-white hover:scale-105 hover:text-primary font-bold shadow-xl">
+--END HEAD--
+--REMOTE CONTENT--
+                <Button size="lg" variant="secondary" asChild className="rounded-full px-10 h-14 text-lg hover:bg-primary hover:text- font-bold shadow-xl">
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\layout.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\layout.tsx:
+--HEAD CONTENT--
+import { AdminLogoutButton } from "./LogoutButton";
+--END HEAD--
+--REMOTE CONTENT--
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\layout.tsx:
+--HEAD CONTENT--
+  
+--END HEAD--
+--REMOTE CONTENT--
+  // Check role
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\layout.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* Sidebar */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\layout.tsx:
+--HEAD CONTENT--
+        <div className="absolute bottom-4 left-0 w-full p-4">
+          <Separator className="mb-4 opacity-50" />
+          <AdminLogoutButton />
+        </div>
+      </aside>
+
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+        <div className="absolute bottom-4 w-full p-4">
+          <Separator className="mb-4 opacity-50" />
+          <Button variant="ghost" className="w-full justify-start gap-3 text-muted-foreground hover:text-destructive">
+            <LogOut className="h-4 w-4" />
+            Logout
+          </Button>
+        </div>
+      </aside>
+
+      {/* Main Content */}
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\products\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\products\page.tsx:
+--HEAD CONTENT--
+  
+--END HEAD--
+--REMOTE CONTENT--
+  // Form State
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\products\page.tsx:
+--HEAD CONTENT--
+        <Button onClick={() => handleOpenDialog()} className="gap-2 rounded-full px-6 hover:bg-white hover:text-primary hover:scale-105 transition-all">
+--END HEAD--
+--REMOTE CONTENT--
+        <Button onClick={() => handleOpenDialog()} className="gap-2 rounded-full px-6">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\admin\products\page.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* Add/Edit Dialog */}
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\login\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\login\page.tsx:
+--HEAD CONTENT--
+  const handleOAuthLogin = async (provider: 'google' | 'github') => {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider,
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback?returnTo=${encodeURIComponent(returnTo)}`,
+      },
+    });
+    if (error) setError(error.message);
+  };
+
+  return (
+    <div className="flex min-h-[80vh] items-center justify-center px-4 py-12 mb-22">
+      <Card className="w-full mt-10 max-w-md border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
+--END HEAD--
+--REMOTE CONTENT--
+  return (
+    <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
+      <Card className="w-full max-w-md border-border/50 shadow-2xl shadow-primary/5">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\login\page.tsx:
+--HEAD CONTENT--
+            <Button variant="outline" className="h-11" onClick={() => handleOAuthLogin('github')}>
+              <Github className="mr-2 h-4 w-4" />
+              GitHub
+            </Button>
+            <Button variant="outline" className="h-11" onClick={() => handleOAuthLogin('google')}>
+--END HEAD--
+--REMOTE CONTENT--
+            <Button variant="outline" className="h-11">
+              <Github className="mr-2 h-4 w-4" />
+              GitHub
+            </Button>
+            <Button variant="outline" className="h-11">
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\register\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\register\page.tsx:
+--HEAD CONTENT--
+import { Laptop, AlertCircle, CheckCircle2, Github, Chrome } from "lucide-react";
+--END HEAD--
+--REMOTE CONTENT--
+import { Laptop, AlertCircle, CheckCircle2 } from "lucide-react";
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\register\page.tsx:
+--HEAD CONTENT--
+  const handleOAuthLogin = async (provider: 'google' | 'github') => {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider,
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback?returnTo=${encodeURIComponent(returnTo)}`,
+      },
+    });
+    if (error) setError(error.message);
+  };
+
+
+
+  if (success) {
+    return (
+      <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
+        
+        <Card className="w-full mt-10 max-w-md border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
+--END HEAD--
+--REMOTE CONTENT--
+  if (success) {
+    return (
+      <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
+        <Card className="w-full max-w-md border-border/50 shadow-2xl">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\register\page.tsx:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\register\page.tsx:
+--HEAD CONTENT--
+    
+    <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
+      
+--END HEAD--
+--REMOTE CONTENT--
+    <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\register\page.tsx:
+--HEAD CONTENT--
+
+          <div className="relative my-6">
+            <div className="absolute inset-0 flex items-center">
+              <span className="w-full border-t border-border/50" />
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-card px-2 text-muted-foreground">Or continue with</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <Button variant="outline" className="h-11" onClick={() => handleOAuthLogin('github')}>
+              <Github className="mr-2 h-4 w-4" />
+              GitHub
+            </Button>
+            <Button variant="outline" className="h-11" onClick={() => handleOAuthLogin('google')}>
+              <Chrome className="mr-2 h-4 w-4" />
+              Google
+            </Button>
+          </div>
+--END HEAD--
+--REMOTE CONTENT--
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\auth\register\page.tsx:
+--HEAD CONTENT--
+      
+    </div>
+    
+--END HEAD--
+--REMOTE CONTENT--
+    </div>
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\cart\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\cart\page.tsx:
+--HEAD CONTENT--
+        <Button asChild className="mt-8 rounded-full px-8 hover:bg-white hover:border-2 hover:border-primary hover:text-primary hover:scale-105" size="lg">
+--END HEAD--
+--REMOTE CONTENT--
+        <Button asChild className="mt-8 rounded-full px-8" size="lg">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\cart\page.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Cart Items */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\cart\page.tsx:
+--HEAD CONTENT--
+                  {}
+--END HEAD--
+--REMOTE CONTENT--
+                  {/* Product Image */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\cart\page.tsx:
+--HEAD CONTENT--
+                  {}
+--END HEAD--
+--REMOTE CONTENT--
+                  {/* Product Details */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\cart\page.tsx:
+--HEAD CONTENT--
+                      {}
+--END HEAD--
+--REMOTE CONTENT--
+                      {/* Quantity Controls */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\cart\page.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Order Summary */}
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\checkout\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\checkout\page.tsx:
+--HEAD CONTENT--
+      
+--END HEAD--
+--REMOTE CONTENT--
+      // No need to call clearCart mutation as the RPC handles it on the server
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\checkout\page.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Shipping & Payment Form */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\checkout\page.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Order Summary Sidebar */}
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\collections\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\collections\page.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── HERO SECTION ───────────────────────────────────── */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\collections\page.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── COLLECTIONS GRID ──────────────────────────────── */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\collections\page.tsx:
+--HEAD CONTENT--
+                  {}
+--END HEAD--
+--REMOTE CONTENT--
+                  {/* Decorative Header */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\collections\page.tsx:
+--HEAD CONTENT--
+                  {}
+--END HEAD--
+--REMOTE CONTENT--
+                  {/* Content */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\collections\page.tsx:
+--HEAD CONTENT--
+      {}
+      <section className={`relative min-h-screen flex items-center justify-center bg-background overflow-hidden relative pt-20 md:pt-40 pb-100 md:pb-40 ${sectionPadding}`}>
+        <div className={containerClass}>
+          <div className="relative overflow-hidden rounded-[3rem] bg-muted/50 border border-border/50 p-12 md:p-24 text-center shadow-inner hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20">
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── CUSTOM BUILD CTA ──────────────────────────────── */}
+      <section className={`relative min-h-screen flex items-center justify-center bg-background overflow-hidden relative pt-20 md:pt-40 pb-100 md:pb-40 ${sectionPadding}`}>
+        <div className={containerClass}>
+          <div className="relative overflow-hidden rounded-[3rem] bg-muted/50 border border-border/50 p-12 md:p-24 text-center shadow-inner">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\collections\page.tsx:
+--HEAD CONTENT--
+                <Button size="lg" className="rounded-full px-12 h-16 text-lg font-bold gap-3 shadow-xl shadow-primary/10 hover:scale-105 hover:bg-white/10 hover:shadow-xl hover:border-2 hover:border-primary hover:shadow-primary/40 hover:text-primary">
+--END HEAD--
+--REMOTE CONTENT--
+                <Button size="lg" className="rounded-full px-12 h-16 text-lg font-bold gap-3 shadow-xl shadow-primary/10">
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+/* ── Mock featured products ─────────────────────────────── */
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+/* ── Feature cards ──────────────────────────────────────── */
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+/* ── Stats ──────────────────────────────────────────────── */
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+      {}
+      <section className="relative min-h-screen flex  bg-background overflow-hidden pt-10  md:pt-35">
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── HERO SECTION ───────────────────────────────────── */}
+      <section className="relative min-h-screen flex  bg-background overflow-hidden pt-10  md:pt-35">
+        {/* Background Animation/Decorative Elements */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Hero Content */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+              <Button size="lg" asChild className="gap-2 px-10 h-14 rounded-full hover:border-primary text-lg shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:scale-105 hover:bg-white hover:text-primary hover:border-2 hover:border-primary transition-all">
+--END HEAD--
+--REMOTE CONTENT--
+              <Button size="lg" asChild className="gap-2 px-10 h-14 rounded-full text-lg shadow-2xl shadow-primary/20 hover:shadow-primary/40 transition-all">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+              <Button size="lg" variant="outline" asChild className="px-10 h-14 rounded-full text-lg border-border/50 hover:border-primary shadow-primary/20 hover:shadow-primary/40 hover: shadow-xl hover:scale-105 hover:bg-white hover:text-primary hover:border-2 hover:border-primary hover:bg-muted/50">
+--END HEAD--
+--REMOTE CONTENT--
+              <Button size="lg" variant="outline" asChild className="px-10 h-14 rounded-full text-lg border-border/50 hover:bg-muted/50">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── FEATURED HARDWARE ─────────────────────────────── */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── ENGINEERING EXCELLENCE ────────────────────────── */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+                className="group border-border/50 transition-all hover:border-primary/30 bg-card/50 backdrop-blur-sm p-2 rounded-3xl hover:scale-105"
+--END HEAD--
+--REMOTE CONTENT--
+                className="group border-border/50 transition-all hover:border-primary/30 bg-card/50 backdrop-blur-sm p-2 rounded-3xl"
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+      {}
+      <section className={`relative ${sectionPadding} overflow-hidden`}>
+        <div className={containerClass}>
+          <div className="relative overflow-hidden rounded-[3rem] bg-foreground px-6 py-24 text-center shadow-[0_48px_100px_-20px_rgba(0,0,0,0.4)] sm:px-16 md:py-32">
+            {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* ── FINAL CTA SECTION ─────────────────────────────── */}
+      <section className={`relative ${sectionPadding} overflow-hidden`}>
+        <div className={containerClass}>
+          <div className="relative overflow-hidden rounded-[3rem] bg-foreground px-6 py-24 text-center shadow-[0_48px_100px_-20px_rgba(0,0,0,0.4)] sm:px-16 md:py-32">
+            {/* Background pattern for CTA */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\page.tsx:
+--HEAD CONTENT--
+                  className="text-black hover:bg-background/10 hover:text-background px-12 h-16 rounded-full text-xl hover:scale-105 font-black backdrop-blur-sm"
+--END HEAD--
+--REMOTE CONTENT--
+                  className="text-black hover:bg-background/10 hover:text-background px-12 h-16 rounded-full text-xl font-black backdrop-blur-sm"
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\page.tsx:
+--HEAD CONTENT--
+      {}
+    
+      <div className="sticky top-0 z-50 bg-background">
+        {}
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto">
+          <div className="mt-5 mb-5 flex flex-wrap items-center gap-2">
+--END HEAD--
+--REMOTE CONTENT--
+      {/* Header */}
+    <div className="sticky top-0 z-40 border-b border-border/50 bg-background">
+      
+        <div className="mb-12 max-w-7xl mx-auto space-y-4 pt-4"> {/* Added pt-4 to prevent clipping at the very top */}
+          <div className="flex items-center gap-2">
+            <Badge variant="outline" className="mt-16 px-3 py-1 uppercase tracking-wider text-[10px] font-bold">
+              Catalog
+            </Badge>
+          </div>
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl">
+            Premium <span className="text-primary">Laptops</span>
+          </h1>
+          <p className="max-w-2xl text-lg text-muted-foreground">
+            Explore our hand-picked selection of high-performance machines 
+            engineered for the modern professional.
+          </p>
+        </div>
+
+        {/* Filters & Search */}
+        <div className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto">
+          <div className="flex flex-wrap items-center gap-2">
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\page.tsx:
+--HEAD CONTENT--
+                className="rounded-full px-5 hover:text-white"
+--END HEAD--
+--REMOTE CONTENT--
+                className="rounded-full px-5"
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\page.tsx:
+--HEAD CONTENT--
+        <div className="mt-5 mb-5">
+--END HEAD--
+--REMOTE CONTENT--
+
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\page.tsx:
+--HEAD CONTENT--
+        </div>
+      
+--END HEAD--
+--REMOTE CONTENT--
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\page.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* Product Grid */}
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\[id]\page.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\[id]\page.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Product Image */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\[id]\page.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Product Info */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\[id]\page.tsx:
+--HEAD CONTENT--
+          {}
+--END HEAD--
+--REMOTE CONTENT--
+          {/* Quick Specs */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\[id]\page.tsx:
+--HEAD CONTENT--
+          {}
+--END HEAD--
+--REMOTE CONTENT--
+          {/* Action Buttons */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\app\shop\[id]\page.tsx:
+--HEAD CONTENT--
+          {}
+--END HEAD--
+--REMOTE CONTENT--
+          {/* Guarantees */}
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Footer.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Footer.tsx:
+--HEAD CONTENT--
+        {}
+        <div className="grid grid-cols-2 gap-8 py-12 md:grid-cols-5 lg:gap-12">
+          {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Main grid */}
+        <div className="grid grid-cols-2 gap-8 py-12 md:grid-cols-5 lg:gap-12">
+          {/* Brand column */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Footer.tsx:
+--HEAD CONTENT--
+            {}
+--END HEAD--
+--REMOTE CONTENT--
+            {/* Socials */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Footer.tsx:
+--HEAD CONTENT--
+          {}
+--END HEAD--
+--REMOTE CONTENT--
+          {/* Link columns */}
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+  
+--END HEAD--
+--REMOTE CONTENT--
+  // Handle cart realtime updates globally here
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+    queryClient.clear(); 
+--END HEAD--
+--REMOTE CONTENT--
+    queryClient.clear(); // Clear ALL queries (cart, user, etc.)
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+    <header className={cn("sticky top-0 z-50 w-full bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60", pathname === "/shop" ? "bg-white" : "bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60")}
+      
+    >
+      <div className="mx-auto flex h-16 max-w-[1350px] mt-4 mx-auto space-y-4 items-center justify-between px-4 sm:px-6 lg:px-8">
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+    <header className="sticky top-0 z-50 w-full  bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60">
+      <div className="mx-auto flex h-16 max-w-[1350px] mt-4 mx-auto space-y-4 items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Desktop nav */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+                "text-sm font-medium transition-colors hover:text-foreground hover:scale-105",
+--END HEAD--
+--REMOTE CONTENT--
+                "text-sm font-medium transition-colors hover:text-foreground",
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+        {}
+        <div className="flex items-center gap-2">
+          {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Right actions */}
+        <div className="flex items-center gap-2">
+          {/* Cart */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+          {}
+--END HEAD--
+--REMOTE CONTENT--
+          {/* Mobile hamburger */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+      {}
+--END HEAD--
+--REMOTE CONTENT--
+      {/* Mobile menu */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\Navbar.tsx:
+--HEAD CONTENT--
+                <Button variant="outline" size="sm" className="w-full hover:scale-105 hover:bg-primary hover:text-primary-foreground" asChild onClick={() => setMobileOpen(false)}>
+                  <Link href="/auth/login">Sign in</Link>
+                </Button>
+                <Button size="sm" className="w-full hover:scale-105 hover:bg-primary hover:text-primary-foreground" asChild onClick={() => setMobileOpen(false)}>
+--END HEAD--
+--REMOTE CONTENT--
+                <Button variant="outline" size="sm" className="w-full" asChild onClick={() => setMobileOpen(false)}>
+                  <Link href="/auth/login">Sign in</Link>
+                </Button>
+                <Button size="sm" className="w-full" asChild onClick={() => setMobileOpen(false)}>
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\ProductCard.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\ProductCard.tsx:
+--HEAD CONTENT--
+        {}
+        <Link href={`/shop/${product.id}`} className="flex-1 flex flex-col">
+          {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Wrap content in Link, but excluding the footer button */}
+        <Link href={`/shop/${product.id}`} className="flex-1 flex flex-col">
+          {/* Image Container */}
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\components\ProductCard.tsx:
+--HEAD CONTENT--
+        {}
+--END HEAD--
+--REMOTE CONTENT--
+        {/* Footer with ADD Button - OUTSIDE the Link to avoid nesting issues */}
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useCart.ts
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useCart.ts:
+--HEAD CONTENT--
+    if (error.code === 'PGRST116') return []; 
+--END HEAD--
+--REMOTE CONTENT--
+    if (error.code === 'PGRST116') return []; // No cart yet
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useCart.ts:
+--HEAD CONTENT--
+      
+      
+      
+      if (newUser && !isSyncing) {
+        
+        
+        
+--END HEAD--
+--REMOTE CONTENT--
+      // Use a local ref-like check or functional state to avoid dependency loop
+      // We only want to sync if we have a NEW user and we had guest items
+      // and we haven't just synced.
+      if (newUser && !isSyncing) {
+        // We can't easily check "old user" here without a ref, 
+        // but we can check if we have items to sync.
+        // To be safe, we'll use a local flag for this mount.
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useCart.ts:
+--HEAD CONTENT--
+  }, []); 
+--END HEAD--
+--REMOTE CONTENT--
+  }, []); // Only run once on mount. guestCart.items.length is handled by getState() inside.
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useCart.ts:
+--HEAD CONTENT--
+        
+        if (product) {
+          guestCart.addItem(product, quantity);
+        } else {
+          
+--END HEAD--
+--REMOTE CONTENT--
+        // Fallback to guest cart if not logged in
+        if (product) {
+          guestCart.addItem(product, quantity);
+        } else {
+          // If product info not provided, we might need to fetch it or just redirect
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useCart.ts:
+--HEAD CONTENT--
+    id: item.product.id, 
+    product_id: item.product.id,
+    cart_id: "guest",
+    quantity: item.quantity,
+    added_at: new Date().toISOString(),
+--END HEAD--
+--REMOTE CONTENT--
+    id: item.product.id, // using product id as item id for guest items
+    product_id: item.product.id,
+    user_id: null,
+    quantity: item.quantity,
+    created_at: new Date().toISOString(),
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useCart.ts:
+--HEAD CONTENT--
+    
+--END HEAD--
+--REMOTE CONTENT--
+    // Unique channel for this hook instance
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useProducts.ts
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\hooks\useProducts.ts:
+--HEAD CONTENT--
+    
+--END HEAD--
+--REMOTE CONTENT--
+    // Map database fields to schema
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\env.ts
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\env.ts:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+// Helper to get the anon key from either name
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\middleware.ts
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\middleware.ts:
+--HEAD CONTENT--
+  
+  
+--END HEAD--
+--REMOTE CONTENT--
+  // With Fluid compute, don't put this client in a global environment
+  // variable. Always create a new one on each request.
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\middleware.ts:
+--HEAD CONTENT--
+  
+  
+  
+
+  
+  
+--END HEAD--
+--REMOTE CONTENT--
+  // Do not run code between createServerClient and
+  // supabase.auth.getClaims(). A simple mistake could make it very hard to debug
+  // issues with users being randomly logged out.
+
+  // IMPORTANT: If you remove getClaims() and you use server-side rendering
+  // with the Supabase client, your users may be randomly logged out.
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\middleware.ts:
+--HEAD CONTENT--
+    
+--END HEAD--
+--REMOTE CONTENT--
+    // no user, potentially respond by redirecting the user to the login page
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\middleware.ts:
+--HEAD CONTENT--
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+--END HEAD--
+--REMOTE CONTENT--
+  // IMPORTANT: You *must* return the supabaseResponse object as it is.
+  // If you're creating a new response object with NextResponse.next() make sure to:
+  // 1. Pass the request in it, like so:
+  //    const myNewResponse = NextResponse.next({ request })
+  // 2. Copy over the cookies, like so:
+  //    myNewResponse.cookies.setAll(supabaseResponse.cookies.getAll())
+  // 3. Change the myNewResponse object to fit your needs, but avoid changing
+  //    the cookies!
+  // 4. Finally:
+  //    return myNewResponse
+  // If this is not done, you may be causing the browser and server to go out
+  // of sync and terminate the user's session prematurely!
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\query-provider.tsx
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\query-provider.tsx:
+--HEAD CONTENT--
+            staleTime: 60 * 1000, 
+--END HEAD--
+--REMOTE CONTENT--
+            staleTime: 60 * 1000, // 1 minute
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\server.ts
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\server.ts:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+/**
+ * If using Fluid compute: Don't put this client in a global variable. Always create a new client within each
+ * function when using it.
+ */
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\server.ts:
+--HEAD CONTENT--
+            
+            
+            
+--END HEAD--
+--REMOTE CONTENT--
+            // The `setAll` method was called from a Server Component.
+            // This can be ignored if you have middleware refreshing
+            // user sessions.
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\supabase-client.ts
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\lib\supabase-client.ts:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+// ── Client-side (Browser) ────────────────────────────────────
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\store\cart.ts
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\store\cart.ts:
+--HEAD CONTENT--
+  
+--END HEAD--
+--REMOTE CONTENT--
+  // Computed helpers
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\types\index.ts
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\types\index.ts:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+// ── Product ──────────────────────────────────────────────────
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\types\index.ts:
+--HEAD CONTENT--
+
+--END HEAD--
+--REMOTE CONTENT--
+// ── Cart item ────────────────────────────────────────────────
+--END REMOTE--
+
+In C:\Users\jayan\OneDrive\Desktop\web\cornerstone\apps\web\types\index.ts:
+--HEAD CONTENT--
+  cart_id: string;
+  product_id: string;
+  quantity: number;
+  added_at: string;
+  product?: Product;
+}
+
+
+--END HEAD--
+--REMOTE CONTENT--
+  user_id: string;
+  product_id: string;
+  quantity: number;
+  created_at: string;
+  product?: Product;
+}
+
+// ── User profile ─────────────────────────────────────────────
+--END REMOTE--
+Found conflicts in C:\Users\jayan\OneDrive\Desktop\web\cornerstone\fix_conflicts.js

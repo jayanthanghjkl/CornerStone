@@ -14,10 +14,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-<<<<<<< HEAD
 import { AdminLogoutButton } from "./LogoutButton";
-=======
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
 
 export default async function AdminLayout({
   children,
@@ -43,11 +40,7 @@ export default async function AdminLayout({
     redirect("/auth/login");
   }
 
-<<<<<<< HEAD
   
-=======
-  // Check role
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
   const { data: profile } = await supabase
     .from("profiles")
     .select("role")
@@ -68,11 +61,7 @@ export default async function AdminLayout({
 
   return (
     <div className="flex min-h-screen bg-muted/30">
-<<<<<<< HEAD
       {}
-=======
-      {/* Sidebar */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       <aside className="w-64 border-r border-border/50 bg-background/50 backdrop-blur-xl">
         <div className="flex h-16 items-center px-6 border-b border-border/10">
           <Link href="/" className="flex items-center gap-2 group">
@@ -96,7 +85,6 @@ export default async function AdminLayout({
           ))}
         </nav>
 
-<<<<<<< HEAD
         <div className="absolute bottom-4 left-0 w-full p-4">
           <Separator className="mb-4 opacity-50" />
           <AdminLogoutButton />
@@ -104,18 +92,6 @@ export default async function AdminLayout({
       </aside>
 
       {}
-=======
-        <div className="absolute bottom-4 w-full p-4">
-          <Separator className="mb-4 opacity-50" />
-          <Button variant="ghost" className="w-full justify-start gap-3 text-muted-foreground hover:text-destructive">
-            <LogOut className="h-4 w-4" />
-            Logout
-          </Button>
-        </div>
-      </aside>
-
-      {/* Main Content */}
->>>>>>> 84677c2b19d0b46691e6d0ded4ee12a146e6e3de
       <main className="flex-1 p-8 overflow-y-auto">
         {children}
       </main>
