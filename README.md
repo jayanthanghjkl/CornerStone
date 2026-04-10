@@ -39,19 +39,23 @@ This project demonstrates how modern applications are structured using:
 ---
 
 ## 📸 Preview
-| | |
-| :---: | :---: |
-| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/050a36ee-4d73-46e7-801c-21f0721f3afa" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/b10ce85c-7d56-48c4-a5fa-79ac23781163" /> |
-| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/7c5ad106-1bc4-4001-9f76-0ccd2722052d" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/d5ae972f-4629-40c0-aa7c-8c8db80b6cf2" /> |
-| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/2620f253-2f45-4d46-8204-f7b9dff2afb7" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/6d02c7bb-4cdd-444a-99fe-641c1641a4e9" /> |
-| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/70e3513f-9981-4c34-8523-9d28cbf5815d" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/05df7d82-b45f-489a-a08a-867daae9ccc5" /> |
-| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/b08a40fe-e23e-4547-bf3a-38c2e859f006" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/74b56f2f-2b3b-4fd6-aea1-a4428920fc83" /> |
+<div align="center">
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/050a36ee-4d73-46e7-801c-21f0721f3afa" />
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/b10ce85c-7d56-48c4-a5fa-79ac23781163" />
+    
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/7c5ad106-1bc4-4001-9f76-0ccd2722052d" />
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/d5ae972f-4629-40c0-aa7c-8c8db80b6cf2" />
+    
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/2620f253-2f45-4d46-8204-f7b9dff2afb7" />
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/6d02c7bb-4cdd-444a-99fe-641c1641a4e9" />
+    
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/70e3513f-9981-4c34-8523-9d28cbf5815d" />
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/05df7d82-b45f-489a-a08a-867daae9ccc5" />
+    
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/b08a40fe-e23e-4547-bf3a-38c2e859f006" />
+    <img width="49%" alt="image" src="https://github.com/user-attachments/assets/74b56f2f-2b3b-4fd6-aea1-a4428920fc83" />
+</div>
 
-
-
-```html
-<img src="/preview.png" width="800" alt="Project Preview">
-````
 
 ---
 
