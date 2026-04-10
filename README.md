@@ -3,13 +3,13 @@
   <h1>🚀 CornerStone</h1>
   <p><strong>A Production-Ready Laptop eCommerce Platform</strong></p>
 
-  <div classname="flex flex-col">
+  <p>
     <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
     <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
     <img src="https://img.shields.io/badge/Turborepo-EF4444?style=for-the-badge&logo=turborepo&logoColor=white" />
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-  </div>
+  </p>
 
   <p>
     A modern full-stack eCommerce application built with scalability, performance, and real-world architecture in mind.
@@ -39,18 +39,13 @@ This project demonstrates how modern applications are structured using:
 ---
 
 ## 📸 Preview
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/050a36ee-4d73-46e7-801c-21f0721f3afa" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b10ce85c-7d56-48c4-a5fa-79ac23781163" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7c5ad106-1bc4-4001-9f76-0ccd2722052d" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d5ae972f-4629-40c0-aa7c-8c8db80b6cf2" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2620f253-2f45-4d46-8204-f7b9dff2afb7" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6d02c7bb-4cdd-444a-99fe-641c1641a4e9" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/70e3513f-9981-4c34-8523-9d28cbf5815d" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/05df7d82-b45f-489a-a08a-867daae9ccc5" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b08a40fe-e23e-4547-bf3a-38c2e859f006" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74b56f2f-2b3b-4fd6-aea1-a4428920fc83" />
-
+| | |
+| :---: | :---: |
+| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/050a36ee-4d73-46e7-801c-21f0721f3afa" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/b10ce85c-7d56-48c4-a5fa-79ac23781163" /> |
+| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/7c5ad106-1bc4-4001-9f76-0ccd2722052d" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/d5ae972f-4629-40c0-aa7c-8c8db80b6cf2" /> |
+| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/2620f253-2f45-4d46-8204-f7b9dff2afb7" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/6d02c7bb-4cdd-444a-99fe-641c1641a4e9" /> |
+| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/70e3513f-9981-4c34-8523-9d28cbf5815d" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/05df7d82-b45f-489a-a08a-867daae9ccc5" /> |
+| <img width="100%" alt="image" src="https://github.com/user-attachments/assets/b08a40fe-e23e-4547-bf3a-38c2e859f006" /> | <img width="100%" alt="image" src="https://github.com/user-attachments/assets/74b56f2f-2b3b-4fd6-aea1-a4428920fc83" /> |
 
 
 
