@@ -227,7 +227,7 @@ Contributions are welcome!
 ## 📬 Connect With Me
 
 * GitHub: [https://github.com/jayanthanghjkl](https://github.com/jayanthanghjkl)
-* LinkedIn: (Add your link)
+* LinkedIn: [(Add your link)](https://www.linkedin.com/in/jayanthan-s-724b64325/)
 
 ---
 
