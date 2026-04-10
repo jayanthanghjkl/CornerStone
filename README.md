@@ -116,3 +116,26 @@ CornerStone/
 ├── supabase/           # Database schema, migrations & SQL functions
 │
 └── turbo.json          # Turborepo configuration
+
+## 🛠️ Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone [https://github.com/jayanthanghjkl/CornerStone.git](https://github.com/jayanthanghjkl/CornerStone.git)
+cd CornerStone
+2️⃣ Install DependenciesBashpnpm install
+3️⃣ Setup Environment VariablesCreate a .env.local file in the root or web app directory:Code snippetNEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+4️⃣ Database Setup (Crucial)To enable the atomic cart logic, run the following SQL snippet in your Supabase SQL Editor:SQLCREATE OR REPLACE FUNCTION add_to_cart(p_product_id UUID, p_quantity INT)
+RETURNS void AS $$
+BEGIN
+  INSERT INTO public.cart_items (user_id, product_id, quantity)
+  VALUES (auth.uid(), p_product_id, p_quantity)
+  ON CONFLICT (user_id, product_id)
+  DO UPDATE SET
+    quantity = cart_items.quantity + EXCLUDED.quantity,
+    created_at = now();
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+5️⃣ Run the Development ServerBashpnpm dev
+⚡ Challenges SolvedChallengeSolution❌ Race conditions in cart✅ Fixed using atomic RPC functions❌ Duplicate cart items✅ Resolved with Postgres ON CONFLICT handling❌ Auth redirect issues✅ Implemented context-aware routing❌ Data leakage✅ Enforced strict Row-Level Security (RLS) policies📈 Roadmap[ ] UI/UX Enhancements & Animations[ ] Wishlist Feature[ ] Payment Gateway Integration (Stripe/Razorpay)[ ] Order Management System[ ] Admin Dashboard Application[ ] Full CI/CD Pipeline via GitHub Actions🤝 ContributingContributions are always welcome! If you'd like to improve the platform:Fork the repositoryCreate a new branch (git checkout -b feature/amazing-feature)Make your changesCommit your changes (git commit -m 'Add some amazing feature')Push to the branch (git push origin feature/amazing-feature)Open a Pull Request📬 Connect With MeGitHub: jayanthanghjklLinkedIn: Jayanthan S<div align="center"><h3>💡 Final Note</h3><p>This project represents my journey from learning development to building production-ready systems.</p><p>If you found this project helpful or interesting:</p>⭐ Star the repo • 🍴 Fork it • 📢 Share it<p><em>Let’s build something amazing! 🚀</em></p></div>
