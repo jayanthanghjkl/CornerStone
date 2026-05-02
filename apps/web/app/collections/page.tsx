@@ -1,4 +1,7 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Laptop, Monitor, Zap, Cpu, Sparkles } from "lucide-react";
 import Link from "next/link";
@@ -51,7 +54,12 @@ export default function CollectionsPage() {
         </div>
 
         <div className={` ${containerClass}`}>
-          <div className=" max-w-5xl space-y-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className=" max-w-5xl space-y-6"
+          >
             <Badge variant="outline" className="px-4 py-1 uppercase tracking-[0.2em] text-[10px] font-black border-primary/20 text-primary">
               Curated Series
             </Badge>
@@ -67,7 +75,7 @@ export default function CollectionsPage() {
                 specific performance needs of every discipline.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -75,9 +83,15 @@ export default function CollectionsPage() {
       <section className={`relative min-h-screen flex items-center justify-center bg-background overflow-hidden relative  bg-muted/10 ${sectionPadding}`}>
         <div className={containerClass}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
-            {collections.map((col) => (
+            {collections.map((col, index) => (
+              <motion.div
+                key={col.title}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
+              >
               <Link 
-                key={col.title} 
                 href={`/shop?category=${col.category}`}
                 className="group block relative overflow-hidden rounded-[2.5rem] border border-border/50 bg-card hover:border-primary/30 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1"
               >
@@ -114,6 +128,7 @@ export default function CollectionsPage() {
                   </div>
                 </div>
               </Link>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -125,7 +140,13 @@ export default function CollectionsPage() {
           <div className="relative overflow-hidden rounded-[3rem] bg-muted/50 border border-border/50 p-12 md:p-24 text-center shadow-inner hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20">
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(var(--primary),0.03)_0%,transparent_70%)] pointer-events-none" />
             
-            <div className="relative z-10 max-w-2xl mx-auto space-y-8">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95, y: 40 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="relative z-10 max-w-2xl mx-auto space-y-8"
+            >
               <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl">Need a Custom Build?</h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Our elite hardware engineers can help you configure a one-of-a-kind 
@@ -137,7 +158,7 @@ export default function CollectionsPage() {
                   <ArrowRight className="h-5 w-5" />
                 </Button>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

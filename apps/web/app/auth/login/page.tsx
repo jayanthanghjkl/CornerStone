@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Laptop, Github, Chrome, AlertCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 function LoginForm() {
   const router = useRouter();
@@ -51,7 +52,13 @@ function LoginForm() {
 
   return (
     <div className="flex min-h-[80vh] items-center justify-center px-4 py-12 mb-22">
-      <Card className="w-full mt-10 max-w-md border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="w-full max-w-md"
+      >
+      <Card className="w-full mt-10 border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
         <CardHeader className="space-y-1 text-center">
           <div className="flex justify-center mb-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
@@ -136,6 +143,7 @@ function LoginForm() {
           </p>
         </CardFooter>
       </Card>
+      </motion.div>
     </div>
   );
 }

@@ -23,7 +23,7 @@ export function FeaturedCarousel({ products }: { products: Product[] }) {
       <CarouselContent className="-ml-2 md:-ml-4">
         {products.map((product) => (
           <CarouselItem key={product.id} className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/4">
-            <ProductCard product={product} />
+            <ProductCard key={product.id} product={product} />
           </CarouselItem>
         ))}
       </CarouselContent>

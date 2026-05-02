@@ -55,7 +55,9 @@ export default function CustomersPage() {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Customers</h1>
-          <p className="text-muted-foreground">Manage your user base and view their activity.</p>
+          <p className="text-muted-foreground">
+            Manage your customers and their information.
+          </p>
         </div>
         <div className="relative w-full sm:w-72">
           <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
@@ -75,7 +77,7 @@ export default function CustomersPage() {
               <TableHead className="w-[300px]">Customer</TableHead>
               <TableHead>Role</TableHead>
               <TableHead>Joined Date</TableHead>
-              <TableHead className="text-right">Actions</TableHead>
+              
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -123,11 +125,7 @@ export default function CustomersPage() {
                       {new Date(customer.created_at).toLocaleDateString()}
                     </div>
                   </TableCell>
-                  <TableCell className="text-right">
-                    <Button variant="ghost" size="icon">
-                      <MoreVertical className="h-4 w-4" />
-                    </Button>
-                  </TableCell>
+                  
                 </TableRow>
               ))
             )}

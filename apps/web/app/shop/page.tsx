@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Laptop, Search, SlidersHorizontal, PackageX } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function ShopPage() {
   const { data: products, isLoading, isError, error } = useProducts();
@@ -29,7 +30,12 @@ export default function ShopPage() {
     
       <div className="sticky top-0 z-50 bg-background">
         {}
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between max-w-7xl mx-auto"
+        >
           <div className="mt-5 mb-5 flex flex-wrap items-center gap-2">
             {categories.map((cat) => (
               <Button
@@ -54,7 +60,7 @@ export default function ShopPage() {
             />
           </div>
         </div>
-        </div>
+        </motion.div>
       
       
     </div>
@@ -104,8 +110,15 @@ export default function ShopPage() {
         </div>
       ) : (
         <div className="z-index-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 content-section">
-          {filteredProducts?.map((product) => (
-            <ProductCard key={product.id} product={product} />
+          {filteredProducts?.map((product, index) => (
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, ease: "easeOut", delay: index * 0.05 }}
+            >
+              <ProductCard product={product} />
+            </motion.div>
           ))}
         </div>
       )}

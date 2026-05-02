@@ -1,8 +1,11 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Laptop, ShieldCheck, Zap, Globe, Users, Trophy, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
+import {motion} from "framer-motion";
 
 const stats = [
   { label: "Years of Excellence", value: "12+" },
@@ -55,7 +58,12 @@ export default function AboutPage() {
         </div>
         
         <div className={containerClass}>
-          <div className="text-center space-y-6 max-w-4xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-center space-y-6 max-w-4xl mx-auto"
+          >
             <Badge variant="outline" className="px-4 py-1 uppercase tracking-[0.2em] text-[10px] font-black border-primary/20 text-primary">
               Our Story
             </Badge>
@@ -80,7 +88,7 @@ export default function AboutPage() {
                   </div>))}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -88,16 +96,29 @@ export default function AboutPage() {
       {}
       <section className={`relative ${sectionPadding}`}>
         <div className={containerClass}>
-          <div className="text-center mb-20 space-y-4">
+          <motion.div 
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-center mb-20 space-y-4"
+          >
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">What Drives Us</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               The core principles that define everything we do and every product we build.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value) => (
-              <Card key={value.title} className="group border-border/50 hover:border-primary/20 transition-all bg-card/50 backdrop-blur-sm p-2 rounded-[2rem]hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
+            {values.map((value, index) => (
+              <motion.div
+                key={value.title}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
+              >
+              <Card className="group border-border/50 hover:border-primary/20 transition-all bg-card/50 backdrop-blur-sm p-2 rounded-[2rem]hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20">
                 <CardHeader className="p-6">
                   <div className={`h-14 w-14 rounded-2xl ${value.bg} flex items-center justify-center ${value.color} mb-6 transition-transform group-hover:rotate-12`}>
                     <value.icon className="h-7 w-7" />
@@ -110,6 +131,7 @@ export default function AboutPage() {
                   </CardDescription>
                 </CardContent>
               </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -121,7 +143,13 @@ export default function AboutPage() {
           <div className="relative overflow-hidden rounded-[3rem] bg-primary px-8 py-20 text-center text-primary-foreground shadow-2xl hover:transition-all hover:duration-300 hover:ease-in-out hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20 hover:shadow-2xl hover:shadow-black/40">
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none -z-10" />
             
-            <div className="relative z-10 max-w-3xl mx-auto space-y-8">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.95, y: 40 }}
+              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="relative z-10 max-w-3xl mx-auto space-y-8"
+            >
               <Trophy className="h-16 w-16 mx-auto mb-4 opacity-80" />
               <h2 className="text-4xl font-black sm:text-6xl tracking-tight">The Future is Performance</h2>
               <p className="text-xl opacity-90 leading-relaxed max-w-2xl mx-auto">
@@ -137,7 +165,7 @@ export default function AboutPage() {
                   </Link>
                 </Button>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

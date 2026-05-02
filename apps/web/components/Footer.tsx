@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Laptop, Github, Twitter, Linkedin } from "lucide-react";
+import { Laptop,Github, Linkedin } from "lucide-react";
 
 const footerLinks = {
   Product: [
@@ -22,9 +22,8 @@ const footerLinks = {
 };
 
 const socials = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/jayanthanghjkl/", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/jayanthan-s-724b64325/", label: "LinkedIn" },
 ];
 
 export function Footer() {

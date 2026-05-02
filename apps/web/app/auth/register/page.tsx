@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Laptop, AlertCircle, CheckCircle2, Github, Chrome } from "lucide-react";
+import { motion } from "framer-motion";
 
 function RegisterForm() {
   const router = useRouter();
@@ -62,7 +63,13 @@ function RegisterForm() {
     return (
       <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
         
-        <Card className="w-full mt-10 max-w-md border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="w-full max-w-md"
+        >
+        <Card className="w-full mt-10 border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
           <CardHeader className="text-center">
             <div className="flex justify-center mb-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-500/10 text-green-500">
@@ -83,6 +90,7 @@ function RegisterForm() {
             </Button>
           </CardFooter>
         </Card>
+        </motion.div>
 
       </div>
     );
@@ -92,7 +100,13 @@ function RegisterForm() {
     
     <div className="flex min-h-[80vh] items-center justify-center px-4 py-12">
       
-      <Card className="w-full max-w-md border-border/50 shadow-2xl shadow-primary/5">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="w-full max-w-md"
+      >
+      <Card className="w-full mt-5 mb-5 border-border/50 shadow-2xl shadow-primary/20 shadow-xl">
         <CardHeader className="space-y-1 text-center">
           <div className="flex justify-center mb-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
@@ -184,6 +198,7 @@ function RegisterForm() {
           </p>
         </CardFooter>
       </Card>
+      </motion.div>
       
     </div>
     
